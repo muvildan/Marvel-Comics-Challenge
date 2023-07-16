@@ -32,7 +32,6 @@
     justify-content: center;
   }
   .logo {
-    cursor: pointer;
     text-align: center;
   }
   .logo:hover .restart {
@@ -197,3 +196,16 @@
     }
   }
   
+  /* Mobile */
+@media (max-width: 480px) {
+  .marvel, .studios {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .marvel, .studios {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,125 @@
+.card {
+    margin: 10vh 10vw;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 80%;
+    background-color: rgba(189, 189, 189, 0.308);
+    border-radius: 1rem;
+}
+
+.char-img-det {
+    margin: 2rem;
+    max-width: 35vw;
+    border-radius: 1.5rem;
+}
+
+.char-name-det {
+    text-align: start;
+    align-self: flex-start;
+    max-width: 30vw;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.char-description {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.char-comics {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.char-comics-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+    max-width: 35vw;
+    margin-right: 1rem;
+    margin-left: -1rem
+}
+
+.char-comics-list-ul {
+    list-style-type: none;
+    text-align: start;
+    justify-self: center;
+    max-width: 80%;
+    max-width: fit-content;
+    padding-left: 2em;
+}
+
+.char-comics-list-li {
+    max-width: 10vw;
+    align-self: flex-start;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .card { 
+        margin: 3vh 10vw;
+        align-self: center;
+        justify-self: center;
+    }
+    .char-img-det  {
+        margin: 0.8rem;
+    }
+    .char-name-det {
+        font-size: 1rem;
+    }
+    .char-description {
+        font-size: 0.4rem;
+    }
+    .char-comics-list-li {
+        font-size: 0.2rem;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .char-name-det {
+        font-size: 1.2rem;
+        max-width: 25vw;
+        margin-top: 0.5vh;
+    }
+    .char-description {
+        font-size: 0.6rem;
+        max-width: 25vw;
+    }
+    .char-comics-container {
+        max-width: 25vw;
+    }
+    .char-comics-list-ul {
+        align-items: center;
+        padding-left: 1rem;
+    }
+    .char-comics-list-li {
+        font-size: 0.4rem;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  }

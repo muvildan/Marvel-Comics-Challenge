@@ -5,8 +5,28 @@
 .chars-section {
   margin: 0 15vw 3vh 15vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.button {
+  width: 7vw;
+}
+
+.prev-button, .next-button {
+  width: 7vw;
+  background: none;
+  color: inherit;
+	border: none;
+  cursor: pointer;
+	outline: inherit;
+}
+.prev-button {
+  margin-right: 3vw;
+}
+
+.next-button {
+  margin-left: 3vw;
 }
 
 .cards-grid {
@@ -62,18 +82,20 @@
 }
 
 .loader {
-  max-width: 100px;
+  max-width: 7vw;
+  position: absolute;
+  top: 40%;
+  left: 45%;
   height: auto;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .loader img{
   display: block;
-  margin: 0 auto;
   height: auto;
-  width: 150%; 
-  margin: 0 0 0 -20%;
+  width: 150%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;

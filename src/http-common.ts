@@ -6,8 +6,8 @@ const PRIV_KEY: String = process.env.REACT_APP_API_PRIV_KEY ?? '';
 const timeStamp: String = new Date().getTime().toString();
 const hash: String = Md5.hashStr(`${timeStamp}${PRIV_KEY}${PUB_KEY}`);
 let params = {
-    offset: 10,
-    limit: 10
+    offset: 12,
+    limit: 12
 };
 
 export default axios.create({

@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import Main from './views/Main';
-//import 'dotenv/config';
 
 function App() {
   return (

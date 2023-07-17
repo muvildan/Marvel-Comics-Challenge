@@ -39,8 +39,12 @@ Apart from that, and since ~80% of world internet traffic happens on mobile devi
 To get started with the project, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Use the `.env.sample` file to create your own `.env` file to connect to Marvel's API. (If you would rather skip this step, you can contact me directly for my credentials 😉)
-3. Run the following command to install all the necessary dependencies for the project.
+2. Navigate to the repository clone by using the following command.
+```
+$ cd Marvel\ Comics\ Challenge
+```
+4. Use the `.env.sample` file to create your own `.env` file to connect to Marvel's API. (If you would rather skip this step, you can contact me directly for my credentials 😉)
+5. Run the following command to install all the necessary dependencies for the project.
 ```
 $ npm install
 ```

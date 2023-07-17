@@ -1,5 +1,6 @@
 import React from "react";
 import { Character } from "../types/API";
+import "../styles/Card.css";
 
 export default function Card(props: { character: Character, cardClick: any}) {
     const { character, cardClick} = props;

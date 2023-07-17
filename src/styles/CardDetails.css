@@ -1,5 +1,5 @@
 .card {
-    margin: 10vh 10vw;
+    margin: 5vh 10vw 5vh 10vw;
     align-self: center;
     justify-self: center;
     display: flex;
@@ -60,7 +60,7 @@
     list-style-type: none;
     text-align: start;
     justify-self: center;
-    max-width: 80%;
+    max-width: 70%;
     max-width: fit-content;
     padding-left: 2em;
 }
@@ -96,6 +96,9 @@
     .char-comics-list-li {
         font-size: 0.2rem;
     }
+    .char-no-comics {
+        font-size: 0.4rem;
+    }
   }
   
   /* Tablet */
@@ -117,9 +120,12 @@
         padding-left: 1rem;
     }
     .char-comics-list-li {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
         white-space: wrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    .char-no-comics {
+        font-size: 0.8rem;
     }
   }

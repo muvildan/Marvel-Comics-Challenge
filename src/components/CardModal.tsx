@@ -27,7 +27,7 @@ export default function CardModal(props: { character: Character}) {
                                 : null
                         ))}
                     </div>
-                        {!character.comics.items[0] && <div>No available comics.</div>}
+                        {!character.comics.items[0] && <div className="char-no-comics">No available comics.</div>}
                 </div>
             </div>
         </div>

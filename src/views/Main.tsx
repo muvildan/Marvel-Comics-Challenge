@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import "../styles/Grid.css";
+import "../styles/Card.css";
 import APIService from "../services/APIService";
 import { MarvelApiResponse, Character } from "../types/API";
 import Header from "../components/Header";
@@ -35,49 +37,59 @@ export default function Main() {
         }
     }, [apiResponse]);
 
+    // Pagination handler moving forward
     const handleNextPage = (newPage: number) => {
         setPagination(pagination + 1);
     };
 
+    // Pagination handler moving backward
     const handlePrevPage = (newPage: number) => {
         if(pagination > 1){
             setPagination(pagination - 1);
         }
     };
 
+    // Fetch data from API on pagination change
     useEffect(() => {
         APIService.getResponse(pagination).then((response) => {
             setApiResponse(response.data);
         });
     }, [pagination]);
     
+    // Card click handler to show details
     const handleCardClick = (character: Character) => {
         setCharacterDetails(character);
         setDetailsView(true);
     };
 
+    // Back to main view handler
     const handleBackToMain = () => {
         setDetailsView(false);
     };
-
-    console.log(detailsView);
 
     // Component render
     return (
         <div>
             <div>
                 <div onClick={handleBackToMain}>
+                    
                     <Header />
+                
                 </div>
+
                 {!apiResponse?.data.results &&
                 <Loader />
                 }
+
                 {detailsView &&
                 <CardModal character={characterDetails!}/>
                 }
+                
                 {apiResponse &&
                 <section className="chars-section">
+                    
                     <PrevPage currentPage={pagination} handlePrevPage={handlePrevPage}/>
+                    
                     <div className="cards-grid">
                         {characters?.map((character) => (
                             <div key={character.id} className="card-item">
@@ -85,9 +97,12 @@ export default function Main() {
                             </div>
                         ))}
                     </div>
+                    
                     <NextPage currentPage={pagination} handleNextPage={handleNextPage}/>
+                
                 </section>
                 }
+
             </div>
         </div>
     );

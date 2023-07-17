@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Marvel Comics Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Summary
+Front-end Web Application built in TypeScript, React, pure CSS, and lots of love. 
+This exercise expects to give an answer to the following requirements:
 
-## Available Scripts
+- React web app
+- TS over JS
+- Clean and scalable code
+- RESTful API management
+- Auth&Auth mechanism
+- Display all Marvel Comics Characters
+- Show details on-character-click
+- Pagination
 
-In the project directory, you can run:
+## Digging deeper
 
-### `npm start`
+I love working on pleasing and visually appealing GUIs, so rather than just being compliant with the given requirements, I've also tried to offer an interesting approach basing the design of the app on what people —like me—, who are Marvel fans, would like: the idea was to follow some styling that would try to teleport the user to that feeling that emerges as soon as we sit on a theatre to watch the newest Marvel film.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Apart from that, and since ~80% of world internet traffic happens on mobile devices, I've also tried to offer responsive design, both for tablet and mobile. This is a big WIP, but the first stone has been set, so that'd definitely be on my top priorities on my backlog. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- <img height="25" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML" /> HTML
+- <img height="25" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" alt="CSS" title="CSS" /> CSS
+- <img height="25" src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" title="TypeScript" /> TypeScript
+- <img height="25" src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React" title="React" /> React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
+- Node
+- npm
+- Local ports:
+    - 3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get started with the project, follow these steps:
 
-### `npm run eject`
+1. Clone the repository to your local machine.
+2. Use the `.env.sample` file to create your own `.env` file to connect to Marvel's API. (If you would rather skip this step, you can contact me directly for my credentials 😉)
+3. Run the following command to install all the necessary dependencies for the project.
+```
+$ npm install
+```
+4. Run the following command to start the project in dev mode:
+```
+$ npm run start
+```
+4. Go to your favorite browser and navigate to [http://localhost:3000](http://localhost:3000)
+5. Enjoy! Feedback will be greatly appreciated. :) 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application allows users to navigate the Marvel Characters API. On each view, they are shown 12 entries, and they can check new entries by just navigating to different pages with the previous and next page buttons.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+On-card-click, a view with details of the chosen character appears. You can then read about their short description, and check the first three comics that they appear on in the API. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+In case there is no image of the character, no description, or no comics, a message stating so is shown. 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Lastly, to go back to the main view, the user can click on the header of the web application.

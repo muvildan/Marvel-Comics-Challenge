@@ -53,7 +53,7 @@ $ npm install
 $ npm run start
 ```
 4. Go to your favorite browser and navigate to [http://localhost:3000](http://localhost:3000)
-5. Enjoy! Feedback will be greatly appreciated. :) 
+5. Enjoy! Feedback will be greatly appreciated. 🙂 
 
 ## Usage
 

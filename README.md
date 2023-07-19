@@ -64,3 +64,13 @@ On-card-click, a view with details of the chosen character appears. You can then
 In case there is no image of the character, no description, or no comics, a message stating so is shown. 
 
 Lastly, to go back to the main view, the user can click on the header of the web application.
+
+## Screenshots
+
+Here are some screenshots from the project:
+
+![Main view](./public/Main.png)
+*Main view*
+
+![Details view](./public/Details.png)
+*Details view*

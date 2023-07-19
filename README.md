@@ -17,7 +17,7 @@ This exercise expects to give an answer to the following requirements:
 
 I love working on pleasing and visually appealing GUIs, so rather than just being compliant with the given requirements, I've also tried to offer an interesting approach basing the design of the app on what people —like me—, who are Marvel fans, would like: the idea was to follow some styling that would try to teleport the user to that feeling that emerges as soon as we sit on a theatre to watch the newest Marvel film.
 
-Apart from that, and since ~80% of world internet traffic happens on mobile devices, I've also tried to offer responsive design, both for tablet and mobile. This is a big WIP, but the first stone has been set, so that'd definitely be on my top priorities on my backlog. 
+Apart from that, and since ~80% of world internet traffic happens on mobile devices, I've also tried to offer responsive design, both for tablet and mobile. This is a big WIP, but the first stone has been set, so that'd definitely be my 1st top priority on my backlog. 
 
 
 
